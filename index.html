@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en" id="html-root">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahmood Mian Najmi — Author & Islamic Scholar</title>
+  <meta name="description" content="Official website of Mahmood Mian Najmi — Senior Lawyer, CEO, and Author of renowned Islamic research works and Seerat books.">
+
+  <style>
+    /* =========================
+       RESET & GLOBAL STYLES
+    ========================= */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f7f3ed;
+      color: #202020;
+      line-height: 1.7;
+      transition: all 0.3s ease;
+    }
+
+    /* RTL / Urdu Font Support */
+    body.lang-ur {
+      font-family: "Jameel Noori Nastaleeq", "Urdu Typesetting", "Noto Nastaliq Urdu", Georgia, serif;
+      direction: rtl;
+      text-align: right;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    section {
+      padding: 100px 8%;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* =========================
+       NAVIGATION
+    ========================= */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(247, 243, 237, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #ddd5ca;
+    }
+
+    nav {
+      max-width: 1200px;
+      height: 75px;
+      margin: auto;
+      padding: 0 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+      letter-spacing: -0.5px;
+      color: #202020;
+      transition: color 0.3s ease;
+    }
+
+    .logo:hover {
+      color: #9a5b35;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+      color: #444;
+      transition: color 0.3s ease;
+    }
+
+    body.lang-ur .nav-links a {
+      font-family: inherit;
+    }
+
+    .nav-links a:hover {
+      color: #9a5b35;
+    }
+
+    /* Language Switch Button */
+    .lang-btn {
+      background: #9a5b35;
+      color: #fff;
+      border: none;
+      padding: 6px 14px;
+      font-size: 0.85rem;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .lang-btn:hover {
+      background: #202020;
+      transform: scale(1.05);
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+    .hero {
+      min-height: 100vh;
+      padding-top: 140px;
+      padding-bottom: 60px;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-content {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 4px;
+      color: #9a5b35;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.8rem, 5.5vw, 5rem);
+      line-height: 1.1;
+      letter-spacing: -2px;
+      margin-bottom: 25px;
+    }
+
+    .quran-quote {
+      background: #eee6dc;
+      border-left: 3px solid #9a5b35;
+      padding: 18px 22px;
+      margin-bottom: 30px;
+      border-radius: 0 4px 4px 0;
+    }
+
+    body.lang-ur .quran-quote {
+      border-left: none;
+      border-right: 3px solid #9a5b35;
+      border-radius: 4px 0 0 4px;
+    }
+
+    .quran-quote p {
+      font-style: italic;
+      font-size: 0.98rem;
+      color: #333;
+    }
+
+    .quran-quote span {
+      display: block;
+      margin-top: 8px;
+      font-family: Arial, sans-serif;
+      font-size: 0.75rem;
+      font-weight: bold;
+      color: #9a5b35;
+    }
+
+    .hero-description {
+      font-size: 1.15rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #202020;
+      color: white;
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+      border-radius: 2px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    body.lang-ur .button {
+      font-family: inherit;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      background: #9a5b35;
+    }
+
+    .button-secondary {
+      background: transparent;
+      color: #202020;
+      border: 1px solid #202020;
+    }
+
+    .button-secondary:hover {
+      background: #202020;
+      color: white;
+    }
+
+    .hero-image {
+      position: relative;
+    }
+
+    .hero-image::before {
+      content: "";
+      position: absolute;
+      width: 90%;
+      height: 90%;
+      background: #dfc7b2;
+      top: 30px;
+      left: 30px;
+      z-index: -1;
+    }
+
+    body.lang-ur .hero-image::before {
+      left: auto;
+      right: 30px;
+    }
+
+    .hero-image img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      background: #ddd;
+    }
+
+    /* =========================
+       SECTION HEADINGS
+    ========================= */
+    .section-heading {
+      margin-bottom: 60px;
+    }
+
+    .section-heading span {
+      font-family: Arial, sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 3px;
+      color: #9a5b35;
+      font-weight: bold;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+      line-height: 1.1;
+      margin-top: 12px;
+      letter-spacing: -1.5px;
+    }
+
+    /* =========================
+       BIOGRAPHY
+    ========================= */
+    .biography {
+      background: #202020;
+      color: white;
+    }
+
+    .bio-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .biography .section-heading span {
+      color: #d39b75;
+    }
+
+    .biography h2 {
+      color: white;
+    }
+
+    .bio-text {
+      font-size: 1.15rem;
+      color: #d5d5d5;
+    }
+
+    .bio-text p {
+      margin-bottom: 22px;
+    }
+
+    .bio-roles {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 25px;
+      padding-top: 25px;
+      border-top: 1px solid #333;
+    }
+
+    .role-item {
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+      color: #e0e0e0;
+    }
+
+    body.lang-ur .role-item {
+      font-family: inherit;
+    }
+
+    .role-item strong {
+      color: #d39b75;
+    }
+
+    /* =========================
+       BOOKS
+    ========================= */
+    .books {
+      background: #f7f3ed;
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px;
+    }
+
+    .book {
+      background: white;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .book:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    .book-cover {
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+      background: #eee;
+      margin-bottom: 20px;
+    }
+
+    .book-title-urdu {
+      font-size: 1.15rem;
+      color: #9a5b35;
+      margin-bottom: 4px;
+      font-weight: bold;
+    }
+
+    .book h3 {
+      font-size: 1.35rem;
+      margin-bottom: 12px;
+      line-height: 1.25;
+    }
+
+    .book p {
+      color: #555;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .book-buy-note {
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      color: #888;
+      border-top: 1px solid #eee;
+      padding-top: 10px;
+    }
+
+    /* =========================
+       NEWSPAPERS / PUBLICATIONS
+    ========================= */
+    .newspapers {
+      background: #ede6dc;
+    }
+
+    .newspaper-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .newspaper-card {
+      background: #f7f3ed;
+      padding: 35px;
+      border-top: 4px solid #9a5b35;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .newspaper-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+    }
+
+    .newspaper-card p {
+      color: #555;
+      font-size: 0.95rem;
+      margin-bottom: 25px;
+    }
+
+    .newspaper-link {
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+      font-weight: bold;
+      color: #9a5b35;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: color 0.3s ease;
+    }
+
+    .newspaper-link:hover {
+      color: #202020;
+    }
+
+    /* =========================
+       REVIEWS
+    ========================= */
+    .reviews {
+      background: #e9dfd3;
+    }
+
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .review {
+      background: #f7f3ed;
+      padding: 40px;
+      border-left: 4px solid #9a5b35;
+    }
+
+    body.lang-ur .review {
+      border-left: none;
+      border-right: 4px solid #9a5b35;
+    }
+
+    .quote {
+      font-size: 1.15rem;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .reviewer {
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      color: #777;
+      letter-spacing: 1px;
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
+    .contact {
+      background: #f7f3ed;
+      border-top: 1px solid #ddd5ca;
+    }
+
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+
+    .contact-info p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .purchase-notice {
+      background: #eee6dc;
+      padding: 15px 20px;
+      border-left: 3px solid #25D366;
+      margin-bottom: 25px;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    body.lang-ur .purchase-notice {
+      border-left: none;
+      border-right: 3px solid #25D366;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .social-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 20px;
+      background: white;
+      border: 1px solid #ddd5ca;
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #202020;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    body.lang-ur .social-btn {
+      font-family: inherit;
+    }
+
+    .social-btn:hover {
+      border-color: #9a5b35;
+      transform: translateX(5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .social-btn.whatsapp:hover {
+      background: #25D366;
+      color: white;
+      border-color: #25D366;
+    }
+
+    .social-btn.facebook:hover {
+      background: #1877F2;
+      color: white;
+      border-color: #1877F2;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+    footer {
+      background: #151515;
+      color: white;
+      padding: 50px 8%;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .footer-name {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    .copyright {
+      font-family: Arial, sans-serif;
+      font-size: 0.75rem;
+      color: #999;
+    }
+
+    /* =========================
+       RESPONSIVE DESIGN
+    ========================= */
+    @media (max-width: 992px) {
+      .book-grid,
+      .newspaper-grid,
+      .review-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 900px) {
+      section {
+        padding: 70px 6%;
+      }
+
+      nav {
+        padding: 0 6%;
+      }
+
+      .nav-links {
+        gap: 15px;
+      }
+
+      .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .hero {
+        padding-top: 110px;
+      }
+
+      .bio-grid,
+      .contact-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .book-grid,
+      .newspaper-grid,
+      .review-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .logo {
+        font-size: 1.1rem;
+      }
+
+      .nav-links a {
+        font-size: 0.75rem;
+      }
+
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+
+      .section-heading h2 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav>
+      <!-- Clickable Logo targeting Google Search -->
+      <a href="https://www.google.com/search?q=mehmood+mian+najmi" target="_blank" rel="noopener noreferrer" class="logo" title="Search Mahmood Mian Najmi on Google">
+        Mahmood Mian Najmi
+      </a>
+
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#biography" data-en="Biography" data-ur="سوانح حیات">Biography</a></li>
+          <li><a href="#books" data-en="Books" data-ur="تصانیف">Books</a></li>
+          <li><a href="#newspapers" data-en="Newspapers" data-ur="اخبارات">Newspapers</a></li>
+          <li><a href="#reviews" data-en="Reviews" data-ur="تبصرے">Reviews</a></li>
+          <li><a href="#contact" data-en="Contact" data-ur="رابطہ">Contact</a></li>
+        </ul>
+
+        <!-- Language Switch Button -->
+        <button id="lang-toggle" class="lang-btn" onclick="toggleLanguage()">اردو</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-content">
+        <div>
+          <p class="eyebrow" data-en="AUTHOR & ISLAMIC SCHOLAR" data-ur="مصنف و مفکرِ اسلام">AUTHOR & ISLAMIC SCHOLAR</p>
+          <h1 data-en="Mahmood Mian Najmi" data-ur="محمود میاں نجمی">Mahmood Mian Najmi</h1>
+
+          <div class="quran-quote">
+            <p data-en="“Read in the name of your Lord who created—Created man from a clinging substance. Read, and your Lord is the most Generous—Who taught by the pen—Taught man that which he knew not.”" data-ur="”پڑھیے اپنے رب کے نام سے جس نے پیدا کیا—انسان کو خون کے لوتھڑے سے بنایا—پڑھیے! اور آپ کا رب بڑا کریم ہے—جس نے قلم کے ذریعے علم سکھایا—انسان کو وہ سکھایا جو وہ نہیں جانتا تھا۔“">“Read in the name of your Lord who created—Created man from a clinging substance. Read, and your Lord is the most Generous—Who taught by the pen—Taught man that which he knew not.”</p>
+            <span data-en="— SURAH AL-ALAQ (96:1–5)" data-ur="— سورۃ العلق (۹۶:۱–۵)">— SURAH AL-ALAQ (96:1–5)</span>
+          </div>
+
+          <p class="hero-description" data-en="Research-based, clear, and heart-touching works on Seerat-un-Nabi (SAW), Islamic history, and sacred landmarks." data-ur="سیرت النبی ﷺ، تاریخِ اسلام اور مقدس مقامات پر تحقيقي، سادہ اور دلنشین تصانیف۔">
+            Research-based, clear, and heart-touching works on Seerat-un-Nabi (SAW), Islamic history, and sacred landmarks.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#books" class="button" data-en="Explore All 10 Books" data-ur="تمام ۱۰ کتابیں دیکھیں">Explore All 10 Books</a>
+            <a href="https://wa.me/923158275126?text=Assalam%20o%20Alaikum%20Mahmood%20Mian%20Najmi%20Sahab,%20I%20would%20like%20to%20inquire%20about%20purchasing%20your%20books." target="_blank" class="button button-secondary" data-en="Order via WhatsApp" data-ur="واٹس ایپ پر آرڈر کریں">Order via WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="biopic.jpg" alt="Mahmood Mian Najmi">
+        </div>
+      </div>
+    </section>
+
+    <!-- BIOGRAPHY SECTION -->
+    <section class="biography" id="biography">
+      <div class="container">
+        <div class="bio-grid">
+          <div class="section-heading">
+            <span data-en="ABOUT THE AUTHOR" data-ur="مصنف کا تعارف">ABOUT THE AUTHOR</span>
+            <h2 data-en="Biography" data-ur="سوانح حیات">Biography</h2>
+          </div>
+
+          <div class="bio-text">
+            <p data-en="Mahmood Mian Najmi is a distinguished author, Senior Lawyer, and religious scholar known for his research-based yet deeply touching writing style." data-ur="محمود میاں نجمی ایک ممتاز مصنف، سینئر وکیل اور اسلامی محقق ہیں جو اپنے تحقیقی اور دلپذیر اندازِ تحریر کے لیے جانے جاتے ہیں۔">
+              Mahmood Mian Najmi is a distinguished author, Senior Lawyer, and religious scholar known for his research-based yet deeply touching writing style.
+            </p>
+            <p data-en="His literature focuses on Seerat-un-Nabi (SAW), Islamic history, the history of Makkah and Madinah, and the lives of the Sahaba and Sahabiyaat. Written with simplicity and authenticity, his works aim to bridge historical scholarship with heart-felt spiritual guidance for contemporary readers." data-ur="آپ کی تصانیف کا بنیادی موضوع سیرت النبی ﷺ، تاریخِ اسلام، تاریخِ مکہ و مدینہ اور صحابہ و صحابیات کی مبارک زندگیاں ہیں۔ آپ کی تحریریں تاریخی حقائق اور روحانی تربیت کا بہترین امتزاج ہیں۔">
+              His literature focuses on Seerat-un-Nabi (SAW), Islamic history, the history of Makkah and Madinah, and the lives of the Sahaba and Sahabiyaat. Written with simplicity and authenticity, his works aim to bridge historical scholarship with heart-felt spiritual guidance for contemporary readers.
+            </p>
+            <p data-en="His scholarly articles are regularly featured in Daily Jang and other leading publications." data-ur="آپ کے تحقیقی مضامین روزنامہ جنگ اور دیگر نامور اخبارات میں باقاعدگی سے شائع ہوتے ہیں۔">
+              His scholarly articles are regularly featured in <em>Daily Jang</em> and other leading publications.
+            </p>
+
+            <div class="bio-roles">
+              <div class="role-item"><strong data-en="Senior Lawyer" data-ur="سینئر ایڈووکیٹ">Senior Lawyer</strong> — <span data-en="Legal Practice & Consultation" data-ur="قانونی خدمات و مشاورت">Legal Practice & Consultation</span></div>
+              <div class="role-item"><strong data-en="CEO" data-ur="سی ای او">CEO</strong> — <span data-en="Pakistan Institute of TQM" data-ur="پاکستان انسٹیٹیوٹ آف ٹی کیو ایم">Pakistan Institute of TQM</span></div>
+              <div class="role-item"><strong data-en="Chairman" data-ur="چیئرمین">Chairman</strong> — <span data-en="Amtul Basheer Educational Society" data-ur="امت البشیر ایجوکیشنل سوسائٹی">Amtul Basheer Educational Society</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKS SECTION -->
+    <section class="books" id="books">
+      <div class="container">
+        <div class="section-heading">
+          <span data-en="PUBLISHED WORKS" data-ur="شائع شدہ تصانیف">PUBLISHED WORKS</span>
+          <h2 data-en="Selected Literature" data-ur="مطبوعہ کتب">Selected Literature</h2>
+        </div>
+
+        <div class="book-grid">
+
+          <!-- BOOK 1 -->
+          <article class="book">
+            <div>
+              <img class="book-cover" src="Seerat Rahmat-ul-Lil-Aalameen.jpeg" alt="Seerat Rahmat-ul-Lil-Aalameen Cover">
+              <p class="book-title-urdu">سیرت رحمت اللعالمین</p>
+              <h3>Seerat Rahmat-ul-Lil-Aalameen</h3>
+              <p data-en="A comprehensive and inspiring overview of the sacred life, noble character, and sublime model of the Prophet Muhammad (peace be upon him)." data-ur="نبی کریم ﷺ کی مبارک زندگی، اسوہ حسنہ اور اخلاقِ حمیدہ کا جامع اور روح پرور تذکرہ۔">A comprehensive and inspiring overview of the sacred life, noble character, and sublime model of the Prophet Muhammad (peace be upon him).</p>
+            </div>
+            <p class="book-buy-note" data-en="🛒 Available exclusively via WhatsApp order." data-ur="🛒 خریداری صرف واٹس ایپ کے ذریعے دستیاب ہے۔">🛒 Available exclusively via WhatsApp order.</p>
+          </article>
+
+          <!-- BOOK 2 -->
+          <article class="book">
+            <div>
+              <img class="book-cover" src="Tareekh Madinah Munawwarah.jpeg" alt="Tareekh Madinah Munawwarah Cover">
+              <p class="book-title-urdu">تاریخ مدینہ منورہ</p>
+              <h3>Tareekh Madinah Munawwarah</h3>
+              <p data-en="An authentic historical work covering the history of Madinah from Yathrib to modern times, serving as an enriching guide for pilgrims." data-ur="یثرب سے جدید دور تک مدینہ منورہ کی مستند تاریخ اور زائرین کے لیے ایمان افروز معلومات۔">An authentic historical work covering the history of Madinah from Yathrib to modern times, serving as an enriching guide for pilgrims.</p>
+            </div>
+            <p class="book-buy-note" data-en="🛒 Available exclusively via WhatsApp order." data-ur="🛒 خریداری صرف واٹس ایپ کے ذریعے دستیاب ہے۔">🛒 Available exclusively via WhatsApp order.</p>
+          </article>
+
+          <!-- BOOK 3 -->
+          <article class="book">
+            <div>
+              <img class="book-cover" src="Seerat-ul-Auliya (Qisas Bees Dervish - Part 1).jpeg" alt="Seerat-ul-Auliya Cover">
+              <p class="book-title-urdu">سیرت الأولیاء</p>
+              <h3>Seerat-ul-Auliya (Qisas Bees Dervish - Part 1)</h3>
+              <p data-en="Twenty stories detailing the lives, piety, spiritual journeys, and inspiring incidents of revered Islamic saints and mystics." data-ur="بزرگانِ دین اور اولیائے کرام کی زندگیوں، تقویٰ اور ایمان افروز واقعات پر مشتمل ۲۰ سبق آموز قصے۔">Twenty stories detailing the lives, piety, spiritual journeys, and inspiring incidents of revered Islamic saints and mystics.</p>
+            </div>
+            <p class="book-buy-note" data-en="🛒 Available exclusively via WhatsApp order." data-ur="🛒 خریداری صرف واٹس ایپ کے ذریعے دستیاب ہے۔">🛒 Available exclusively via WhatsApp order.</p>
+          </article>
+
+          <!-- BOOK 4 -->
+          <article class="book">
+            <div>
+              <img class="book-cover" src="Huqooq-ul-Ibaad.jpeg" alt="Huqooq-ul-Ibaad Cover">
+              <p class="book-title-urdu">حقوق العباد</p>
+              <h3>Huqooq-ul-Ibaad</h3>
+              <p data-en="A collection of essays focusing on human rights in Islam, social and moral responsibilities, justice, and mutual obligations within society." data-ur="اسلام میں انسانی حقوق، معاشرتی و اخلاقی ذمہ داریوں اور عدل و انصاف پر مبنی مضامین کا مجموعہ۔">A collection of essays focusing on human rights in Islam, social and moral responsibilities, justice, and mutual obligations within society.</p>
+            </div>
+            <p class="book-buy-note" data-en="🛒 Available exclusively via WhatsApp order." data-ur="🛒 خریداری صرف واٹس ایپ کے ذریعے دستیاب ہے۔">🛒 Available exclusively via WhatsApp order.</p>
+          </article>
+
+          <!-- BOOK 5 -->
+          <article class="book">
+            <div>
+              <img class="book-cover" src="Banaat-e-Tayyibat.jpeg" alt="Banaat-e-Tayyibat Cover">
+              <p class="book-title-urdu">بناتِ طیبات</p>
+              <h3>Banaat-e-Tayyibat</h3>
+              <p data-en="Highlighting the blessed lives, noble character, and enduring contributions of the beloved daughters of Prophet Muhammad (peace be upon him)." data-ur="نبی کریم ﷺ کی شہزادیوں (بناتِ طاہرات) کی سیرت طیبہ اور دینی خدمات کا روشن تذکرہ۔">Highlighting the blessed lives, noble character, and enduring contributions of the beloved daughters of Prophet Muhammad (peace be upon him).</p>
+            </div>
+            <p class="book-buy-note" data-en="🛒 Available exclusively via WhatsApp order." data-ur="🛒 خریداری صرف واٹس ایپ کے ذریعے دستیاب ہے۔">🛒 Available exclusively via WhatsApp order.</p>
+          </article>
+
+          <!-- BOOK 6 -->
+          <article class="book">
+            <div>
+              <img class="book-cover" src="Tareekh Makkah Mukarramah.jpeg" alt="Tareekh Makkah Mukarramah Cover">
+              <p class="book-title-urdu">تاریخ مکہ مکرمہ</p>
+              <h3>Tareekh Makkah Mukarramah</h3>
+              <p data-en="Explores the historical evolution of Makkah, details of the Holy Kaaba, key sacred landmarks, and the significance of Islam’s holiest city." data-ur="مکہ مکرمہ کی تاریخ، خانہ کعبہ کی تعمیر و ارتقاء اور مقدس مقامات کی تفصیلی تاریخ۔">Explores the historical evolution of Makkah, details of the Holy Kaaba, key sacred landmarks, and the significance of Islam’s holiest city.</p>
+            </div>
+            <p class="book-buy-note" data-en="🛒 Available exclusively via WhatsApp order." data-ur="🛒 خریداری صرف واٹس ایپ کے ذریعے دستیاب ہے۔">🛒 Available exclusively via WhatsApp order.</p>
+          </article>
+
+          <!-- BOOK 7 -->
+          <article class="book">
+            <div>
+              <img class="book-cover" src="Seerat Sahabiyaat.jpeg" alt="Seerat Sahabiyaat Cover">
+              <p class="book-title-urdu">سیرت صحابیات</p>
+              <h3>Seerat Sahabiyaat</h3>
+              <p data-en="Focuses on the lives, sacrifices, piety, and pivotal role of the female companions (Sahabiyaat) of Prophet Muhammad (peace be upon him)." data-ur="صحابیاتِ رسول ﷺ کے ایثار، تقویٰ، قربانیوں اور اسلامی معاشرے میں ان کے عظیم کردار کا تذکرہ۔">Focuses on the lives, sacrifices, piety, and pivotal role of the female companions (Sahabiyaat) of Prophet Muhammad (peace be upon him).</p>
+            </div>
+            <p class="book-buy-note" data-en="🛒 Available exclusively via WhatsApp order." data-ur="🛒 خریداری صرف واٹس ایپ کے ذریعے دستیاب ہے۔">🛒 Available exclusively via WhatsApp order.</p>
+          </article>
+
+          <!-- BOOK 8 -->
+          <article class="book">
+            <div>
+              <img class="book-cover" src="Mustanad Qisas-ul-Anbiya.jpeg" alt="Mustanad Qisas-ul-Anbiya Cover">
+              <p class="book-title-urdu">مستند قصص الانبیاء</p>
+              <h3>Mustanad Qisas-ul-Anbiya</h3>
+              <p data-en="An authentic compilation detailing the accounts and stories of the Prophets of Allah based on Quranic narratives and reliable Hadith sources." data-ur="قرآن مجید اور مستند احادیث کی روشنی میں انبیاء کرام علیہم السلام کے سبق آموز واقدات۔">An authentic compilation detailing the accounts and stories of the Prophets of Allah based on Quranic narratives and reliable Hadith sources.</p>
+            </div>
+            <p class="book-buy-note" data-en="🛒 Available exclusively via WhatsApp order." data-ur="🛒 خریداری صرف واٹس ایپ کے ذریعے دستیاب ہے۔">🛒 Available exclusively via WhatsApp order.</p>
+          </article>
+
+          <!-- BOOK 9 -->
+          <article class="book">
+            <div>
+              <img class="book-cover" src="Khulafa-e-Rashideen.jpeg" alt="Khulafa-e-Rashideen Cover">
+              <p class="book-title-urdu">خلفائے راشدین</p>
+              <h3>Khulafa-e-Rashideen</h3>
+              <p data-en="Covers the lives, governance, and legacy of the Rightly Guided Caliphs alongside the exemplary rule of Umar ibn Abd al-Aziz." data-ur="خلفائے راشدینؓ اور حضرت عمر بن عبدالعزیزؒ کے نظامِ حکومت، عدل اور تابناک سیرت کا مطالعہ۔">Covers the lives, governance, and legacy of the Rightly Guided Caliphs alongside the exemplary rule of Umar ibn Abd al-Aziz.</p>
+            </div>
+            <p class="book-buy-note" data-en="🛒 Available exclusively via WhatsApp order." data-ur="🛒 خریداری صرف واٹس ایپ کے ذریعے دستیاب ہے۔">🛒 Available exclusively via WhatsApp order.</p>
+          </article>
+
+          <!-- BOOK 10 -->
+          <article class="book">
+            <div>
+              <img class="book-cover" src="Ummahat-ul-Mu'mineen.jpeg" alt="Ummahat-ul-Mu'mineen Cover">
+              <p class="book-title-urdu">أُمّہات المؤمنین</p>
+              <h3>Ummahat-ul-Mu'mineen</h3>
+              <p data-en="A compiled work detailing the honorable lives, virtues, and religious contributions of the Mothers of the Believers." data-ur="ازواجِ مطہرات امہات المؤمنینؓ کے فضائل، پاکیزہ زندگیاں اور دینی و علمی خدمات۔">A compiled work detailing the honorable lives, virtues, and religious contributions of the Mothers of the Believers.</p>
+            </div>
+            <p class="book-buy-note" data-en="🛒 Available exclusively via WhatsApp order." data-ur="🛒 خریداری صرف واٹس ایپ کے ذریعے دستیاب ہے۔">🛒 Available exclusively via WhatsApp order.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSPAPERS & ARTICLES SECTION -->
+    <section class="newspapers" id="newspapers">
+      <div class="container">
+        <div class="section-heading">
+          <span data-en="JOURNALISM & MEDIA" data-ur="صحافت و کالم نگاری">JOURNALISM & MEDIA</span>
+          <h2 data-en="Newspapers & Publications" data-ur="اخبارات و مضامین">Newspapers & Publications</h2>
+        </div>
+
+        <div class="newspaper-grid">
+          <!-- NEWSPAPER 1 -->
+          <article class="newspaper-card">
+            <div>
+              <h3>Daily Jang</h3>
+              <p data-en="Regular weekly columns on contemporary Islamic issues, Seerat, and societal ethics." data-ur="اسلامی تعلیمات، سیرت طیبہ اور معاشرتی اصلاح پر ہفتہ وار تحقیقی کالم۔">Regular weekly columns on contemporary Islamic issues, Seerat, and societal ethics.</p>
+            </div>
+            <!-- Insert your article link in href attribute below -->
+            <a href="#" class="newspaper-link" target="_blank" rel="noopener noreferrer">
+              <span data-en="Read Columns →" data-ur="کالمز پڑھیں ←">Read Columns →</span>
+            </a>
+          </article>
+
+          <!-- NEWSPAPER 2 -->
+          <article class="newspaper-card">
+            <div>
+              <h3 data-en="Newspaper Title 2" data-ur="اخبار / رسالہ ۲">Newspaper Title 2</h3>
+              <p data-en="Feature articles and historical research pieces published periodically." data-ur="تاریخی و تحقیقی مقالات اور بالخصوص دینی مضامین۔">Feature articles and historical research pieces published periodically.</p>
+            </div>
+            <!-- Insert your article link in href attribute below -->
+            <a href="#" class="newspaper-link" target="_blank" rel="noopener noreferrer">
+              <span data-en="Read Articles →" data-ur="مضامین پڑھیں ←">Read Articles →</span>
+            </a>
+          </article>
+
+          <!-- NEWSPAPER 3 -->
+          <article class="newspaper-card">
+            <div>
+              <h3 data-en="Newspaper Title 3" data-ur="اخبار / رسالہ ۳">Newspaper Title 3</h3>
+              <p data-en="Scholarly contributions on Islamic jurisprudence and social justice." data-ur="حقوق العباد اور معاشرتی عدل پر مبنی کالم و مضامین۔">Scholarly contributions on Islamic jurisprudence and social justice.</p>
+            </div>
+            <!-- Insert your article link in href attribute below -->
+            <a href="#" class="newspaper-link" target="_blank" rel="noopener noreferrer">
+              <span data-en="Read Articles →" data-ur="مضامین پڑھیں ←">Read Articles →</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="section-heading">
+          <span data-en="WHAT READERS SAY" data-ur="قارئین کی رائے">WHAT READERS SAY</span>
+          <h2 data-en="Reviews & Testimonials" data-ur="تبصرے و آراء">Reviews & Testimonials</h2>
+        </div>
+
+        <div class="review-grid">
+          <article class="review">
+            <p class="quote" data-en="“A thoughtful and engaging work that stays with the reader.”" data-ur="”ایک بہترین اور فکر انگیز تحریر جو قارئین کے دلوں پر نقش ہو جاتی ہے۔“">“A thoughtful and engaging work that stays with the reader.”</p>
+            <p class="reviewer" data-en="— READER REVIEW" data-ur="— تبصرہ قارئین">— READER REVIEW</p>
+          </article>
+
+          <article class="review">
+            <p class="quote" data-en="“Beautifully written, meaningful, and deeply resonant.”" data-ur="”انتہائی خوبصورت، با معنی اور دل کو چھو لینے والی کتاب۔“">“Beautifully written, meaningful, and deeply resonant.”</p>
+            <p class="reviewer" data-en="— READER REVIEW" data-ur="— تبصرہ قارئین">— READER REVIEW</p>
+          </article>
+
+          <article class="review">
+            <p class="quote" data-en="“A compelling compilation with ideas worth reflecting upon.”" data-ur="”ایمان افروز معلومات اور فکر انگیز حقائق پر مبنی شاندار تصنیف۔“">“A compelling compilation with ideas worth reflecting upon.”</p>
+            <p class="reviewer" data-en="— READER REVIEW" data-ur="— تبصرہ قارئین">— READER REVIEW</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-container">
+          <div class="section-heading">
+            <span data-en="GET IN TOUCH" data-ur="رابطہ کریں">GET IN TOUCH</span>
+            <h2 data-en="Contact & Purchasing" data-ur="رابطہ و خریداری">Contact & Purchasing</h2>
+          </div>
+
+          <div class="contact-info">
+            <p data-en="For book purchases, publishing inquiries, or speaking requests, please connect via our official channels below:" data-ur="کتب کی خریداری، اشاعت یا دیگر معلومات کے لیے نیچے دیے گئے آفیشل لنکس پر رابطہ کریں:">
+              For book purchases, publishing inquiries, or speaking requests, please connect via our official channels below:
+            </p>
+
+            <div class="purchase-notice">
+              <strong data-en="📌 Purchasing Policy:" data-ur="📌 خریداری کا طریقہ کار:">📌 Purchasing Policy:</strong>
+              <span data-en="The ONLY official way to order and purchase books is via direct WhatsApp contact." data-ur="کتب آرڈر کرنے اور خریدنے کا واحد اور آفیشل طریقہ واٹس ایپ کے ذریعے ہے۔">
+                The ONLY official way to order and purchase books is via direct WhatsApp contact.
+              </span>
+            </div>
+
+            <div class="contact-links">
+              <!-- WhatsApp Link -->
+              <a href="https://wa.me/923158275126?text=Assalam%20o%20Alaikum%20Mahmood%20Mian%20Najmi%20Sahab,%20I%20would%20like%20to%20inquire%20about%20purchasing%20your%20books." target="_blank" rel="noopener noreferrer" class="social-btn whatsapp">
+                💬 <span data-en="WhatsApp: 0315-8275126 (Order Books)" data-ur="واٹس ایپ: 0315-8275126 (کتب آرڈر کرنے کے لیے)">WhatsApp: 0315-8275126 (Order Books)</span>
+              </a>
+
+              <!-- Facebook Profile -->
+              <a href="https://www.facebook.com/share/19jmQUgteo/" target="_blank" rel="noopener noreferrer" class="social-btn facebook">
+                📘 <span data-en="Official Facebook Page" data-ur="آفیشل فیس بک پیج">Official Facebook Page</span>
+              </a>
+
+              <!-- Darsequran Series FB -->
+              <a href="https://www.facebook.com/share/v/1C5tDWayTG/" target="_blank" rel="noopener noreferrer" class="social-btn facebook">
+                🎥 <span data-en="Darsequran.com Series (Facebook)" data-ur="درسِ قرآن سیریز (فیس بک)">Darsequran.com Series (Facebook)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <p class="footer-name" data-en="Mahmood Mian Najmi" data-ur="محمود میاں نجمی">Mahmood Mian Najmi</p>
+      <p class="copyright" data-en="© 2026 Mahmood Mian Najmi. All rights reserved." data-ur="© 2026 محمود میاں نجمی۔ جملہ حقوق محفوظ ہیں۔">© 2026 Mahmood Mian Najmi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT FOR LANGUAGE TOGGLE -->
+  <script>
+    let currentLang = 'en';
+
+    function toggleLanguage() {
+      const htmlRoot = document.getElementById('html-root');
+      const body = document.body;
+      const toggleBtn = document.getElementById('lang-toggle');
+
+      if (currentLang === 'en') {
+        currentLang = 'ur';
+        htmlRoot.setAttribute('lang', 'ur');
+        body.classList.add('lang-ur');
+        toggleBtn.textContent = 'English';
+      } else {
+        currentLang = 'en';
+        htmlRoot.setAttribute('lang', 'en');
+        body.classList.remove('lang-ur');
+        toggleBtn.textContent = 'اردو';
+      }
+
+      // Translate all marked elements
+      const elements = document.querySelectorAll('[data-en][data-ur]');
+      elements.forEach(el => {
+        el.textContent = el.getAttribute(`data-${currentLang}`);
+      });
+    }
+  </script>
+
+</body>
+</html>
